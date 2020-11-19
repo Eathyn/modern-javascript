@@ -1,15 +1,18 @@
 function sumInput() {
-  let arr = []
+  let numbers = []
 
-  let input = prompt('enter a number')
-  while (!isNaN(input) && input !== '' && input !== null) {
-    arr.push(+input)
-    input = prompt('enter a number')
+  while (true) {
+    const userInput = prompt('enter a number')
+    if (isNaN(userInput) || userInput === '' || userInput === null) {
+      break
+    } else {
+      numbers.push(+userInput)
+    }
   }
 
   let sum = 0
-  for (const ele of arr) {
-    sum += ele
+  for (const number of numbers) {
+    sum += number
   }
 
   return sum
