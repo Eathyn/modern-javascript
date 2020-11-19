@@ -1,3 +1,7 @@
 function ucFirst(str) {
-  return `${str[0].toUpperCase()}${str.slice(1)}`
+  if (!str) {
+    return false
+  } else {
+    return `${str[0].toUpperCase()}${str.slice(1)}`
+  }
 }
