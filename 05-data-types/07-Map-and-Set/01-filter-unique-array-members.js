@@ -1,3 +1,3 @@
 function unique(arr) {
-  return Array.from(new Set(arr).values())
+  return Array.from(new Set(arr))
 }
